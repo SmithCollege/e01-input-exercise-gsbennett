@@ -14,16 +14,16 @@ print() # just to add a new line
 total_pets = 0
 
 # getting a string with a prompt
-num_dogs = input("How many dogs do you have? ")
+num_dogs = int ( input("How many dogs do you have? ") )
 # using the numeric string to print
 print (name,"has",num_dogs,"dogs")
 
 # getting another string with a prompt
-num_cats = input("How many cats do you have? ")
+num_cats = int ( input("How many cats do you have? "))
 
 #if you try to use these variables in an expression
 # you'll run into trouble
-# total_pets = total_pets + num_dogs + num_cats
+total_pets +=  int(num_dogs) + int(num_cats)
 
 print("total_pets:", total_pets)
 
@@ -41,3 +41,9 @@ print("total_pets:", total_pets)
 # x = x / 3 is the same as x /= 3
 
 #  3. Rewrite the corrected expression of line 26 using: +=
+
+
+
+print(f"animals = {total_pets} which is more than {2-2}")
+
+print("na"*15, "batman")
